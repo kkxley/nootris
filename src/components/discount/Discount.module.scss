@@ -1,0 +1,22 @@
+@import './../../scss/vars';
+.discount {
+    padding: 110px 64px;
+
+    &__conteiner {
+        max-width: $max-width;
+        margin: 0 auto;
+    }
+
+    &__title {
+        white-space: pre-wrap;
+        text-align: center;
+        font-weight: 700;
+        font-size: 48px;
+        color: #FFFFFF;
+        margin-bottom: 85px;
+
+        &_orange {
+            color: #FCB500;
+        }
+    }
+}

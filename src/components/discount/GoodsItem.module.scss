@@ -1,0 +1,59 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__caption {
+        white-space: pre-wrap;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 45px;
+        font-size: 36px;
+        color: #FFFFFF;
+
+        &_orange {
+            font-size: 24px;
+            color: #FCB500;
+        }
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        column-gap: 32px;
+        margin-bottom: 59px;
+
+        &_old {
+            position: relative;
+            font-weight: 400;
+            font-size: 36px;
+            color: #ADADAD;
+
+            &:before {
+                content: "";
+                position: absolute;
+                display: block;
+                height: 2px;
+                width: calc(100% + 20px);
+                background: #ADADAD;
+                top: 50%;
+                left: -10px;
+            }
+        }
+
+        &_new {
+            font-weight: 400;
+            font-size: 48px;
+            color: #fff;
+        }
+    }
+
+    &__button {
+        margin-top: 64px;
+        text-align: center;
+
+        button {
+            min-width: 256px;
+        }
+    }
+}

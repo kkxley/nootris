@@ -1,0 +1,25 @@
+.basket {
+    width: 32px;
+    height: 28px;
+    vertical-align: middle;
+    margin-left: 76px;
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__goods {
+        position: absolute;
+        background: #FCB500;
+        font-size: 12px;
+        line-height: 12px;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        right: -8px;
+        bottom: -8px;
+        box-sizing: border-box;
+        padding-top: 2px;
+    }
+}

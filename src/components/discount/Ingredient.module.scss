@@ -1,0 +1,18 @@
+.ingredient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__caption {
+        &:first-line {
+            color: #fff;
+        }
+
+        margin-top: 78px;
+        color: #FCB500;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        white-space: pre-wrap;
+    }
+}
