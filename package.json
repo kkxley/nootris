@@ -10,7 +10,7 @@
     "dev": "webpack-dev-server",
     "build": "NODE_ENV=production ./node_modules/.bin/webpack",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.20.5",
