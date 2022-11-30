@@ -1,8 +1,10 @@
+@import './../../scss/functions';
+
 .basket {
     width: 32px;
     height: 28px;
     vertical-align: middle;
-    margin-left: 76px;
+    @include fluidProperty('margin-left', 25, 76, 1300, 1440);
 
     &__wrapper {
         position: relative;

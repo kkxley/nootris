@@ -10,7 +10,7 @@ export default function GoodsItem({image, price, oldPrice, title, additionalTitl
             <span className={styles.item__price_new}>{oldPrice}&#8381;</span>
         </div>
         <div>
-            <img src={image} alt={`${title} ${additionalTitle}`} />
+            <img className={styles.item__image} src={image} alt={`${title} ${additionalTitle}`} />
         </div>
         <h3 className={styles.item__caption}>
             <span>{title}</span>{"\n"}

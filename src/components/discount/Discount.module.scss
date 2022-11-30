@@ -1,4 +1,6 @@
 @import './../../scss/vars';
+@import './../../scss/functions';
+
 .discount {
     padding: 110px 64px;
 
@@ -11,7 +13,7 @@
         white-space: pre-wrap;
         text-align: center;
         font-weight: 700;
-        font-size: 48px;
+        @include fluidProperty('font-size', 18, 48, 320, 1440);
         color: #FFFFFF;
         margin-bottom: 85px;
 

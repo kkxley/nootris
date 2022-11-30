@@ -1,9 +1,11 @@
+@import './../../scss/functions';
+
 .logo {
     width: 120px;
     height: 35px;
     vertical-align: middle;
 
     &__wrapper {
-        margin-right: 100px;
+        @include fluidProperty('margin-right', 25, 100, 1300, 1440);
     }
 }

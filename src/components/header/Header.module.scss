@@ -1,4 +1,5 @@
 @import './../../scss/vars';
+@import './../../scss/functions';
 
 .header {
     z-index: 2;
@@ -10,7 +11,9 @@
     max-width: $max-width;
     margin: 0 auto;
     height: 100%;
-    padding: 96px 0;
+    @include fluidProperty('padding', 25, 96, 320, 1440);
+    padding-left: 0 !important;
+    padding-right: 0 !important;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -19,6 +22,7 @@
         width: 100%;
         height: 60.5vw;
         position: relative;
+        min-height: 380px;
         max-height: 792px;
         background: #FCDA28 url("../../assets/bg.png") no-repeat center center;
         background-size: cover;
@@ -27,9 +31,20 @@
     &__goods {
         position: absolute;
         right: 0;
-        bottom: -100px;
-        height: calc(100% + 120px);
+        bottom: -15%;
+        height: 115%;
         width: auto;
+
+        @media (max-width: 800px) {
+            bottom: -10%;
+            height: 90%;
+        }
+        @media (max-width: 540px) {
+            max-height: 60%;
+        }
+        @media (max-width: 400px) {
+            display: none;
+        }
     }
 
     &__slogan {
@@ -39,14 +54,14 @@
             text-transform: uppercase;
             color: #FFFFFF;
             font-weight: 700;
-            font-size: 144px;
+            @include fluidProperty('font-size', 32, 144, 320, 1440);
         }
 
         p {
             white-space: pre-wrap;
             margin-top: 24px;
             font-weight: 400;
-            font-size: 24px;
+            @include fluidProperty('font-size', 16, 24, 320, 1440);
         }
     }
 
@@ -54,14 +69,14 @@
         h2 {
             text-transform: uppercase;
             font-weight: 700;
-            font-size: 36px;
+            @include fluidProperty('font-size', 18, 36, 320, 1440);
         }
 
         p {
             white-space: pre-wrap;
             margin-top: 16px;
             font-weight: 400;
-            font-size: 18px;
+            @include fluidProperty('font-size', 14, 18, 320, 1440);
         }
     }
 

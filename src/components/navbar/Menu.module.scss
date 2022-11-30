@@ -6,9 +6,15 @@
 
     &__item {
         font-size: 18px;
+
         a {
             color: #fff;
             text-decoration: none;
         }
     }
+
+    @media (max-width: 1200px) {
+        display: none;
+    }
+
 }
