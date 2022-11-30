@@ -30,7 +30,7 @@ const ITEMS = [
 
 export default function Menu() {
     return <ul className={styles.menu}>
-        {ITEMS.map((item) => <li className={styles.menu__item}>
+        {ITEMS.map((item, i) => <li key={i} className={styles.menu__item}>
             <a href={item.link}>{item.title}</a>
         </li>)}
     </ul>
